@@ -49,7 +49,7 @@ export function Hero() {
             <a href="#tools" className="inline-flex items-center justify-center gap-2 rounded-md bg-accent px-6 py-3 font-semibold text-white shadow-glow transition hover:bg-red-600">
               Explore Tools <FiArrowRight />
             </a>
-            <a href="https://github.com/hatrix" className="inline-flex items-center justify-center gap-2 rounded-md border border-white/15 px-6 py-3 font-semibold text-white transition hover:border-accent/60 hover:bg-white/5">
+            <a href="#" className="inline-flex items-center justify-center gap-2 rounded-md border border-white/15 px-6 py-3 font-semibold text-white transition hover:border-accent/60 hover:bg-white/5">
               <FiGithub /> GitHub
             </a>
           </div>

@@ -21,7 +21,7 @@ export const tools: SecurityTool[] = [
     category: 'Utilities',
     version: '1.0.0',
     status: 'Stable',
-    githubUrl: 'https://github.com/hatrix/password-generator',
+    githubUrl: '#',
     docsUrl: '#',
   },
   {
@@ -30,7 +30,7 @@ export const tools: SecurityTool[] = [
     category: 'Crypto',
     version: '1.0.0',
     status: 'Stable',
-    githubUrl: 'https://github.com/hatrix/hash-generator',
+    githubUrl: '#',
     docsUrl: '#',
   },
   {
@@ -39,7 +39,7 @@ export const tools: SecurityTool[] = [
     category: 'Network',
     version: '0.9.0',
     status: 'Beta',
-    githubUrl: 'https://github.com/hatrix/port-scanner',
+    githubUrl: '#',
     docsUrl: '#',
   },
   {
@@ -48,7 +48,7 @@ export const tools: SecurityTool[] = [
     category: 'Network',
     version: '0.8.2',
     status: 'Beta',
-    githubUrl: 'https://github.com/hatrix/network-scanner',
+    githubUrl: '#',
     docsUrl: '#',
   },
   {
@@ -57,7 +57,7 @@ export const tools: SecurityTool[] = [
     category: 'OSINT',
     version: '1.1.0',
     status: 'Stable',
-    githubUrl: 'https://github.com/hatrix/subdomain-finder',
+    githubUrl: '#',
     docsUrl: '#',
   },
   {
@@ -66,7 +66,7 @@ export const tools: SecurityTool[] = [
     category: 'OSINT',
     version: '1.0.1',
     status: 'Stable',
-    githubUrl: 'https://github.com/hatrix/dns-lookup',
+    githubUrl: '#',
     docsUrl: '#',
   },
   {
@@ -75,7 +75,7 @@ export const tools: SecurityTool[] = [
     category: 'OSINT',
     version: '0.7.0',
     status: 'Beta',
-    githubUrl: 'https://github.com/hatrix/whois-lookup',
+    githubUrl: '#',
     docsUrl: '#',
   },
   {
@@ -84,7 +84,7 @@ export const tools: SecurityTool[] = [
     category: 'Web',
     version: '1.0.0',
     status: 'Stable',
-    githubUrl: 'https://github.com/hatrix/jwt-decoder',
+    githubUrl: '#',
     docsUrl: '#',
   },
   {
@@ -93,7 +93,7 @@ export const tools: SecurityTool[] = [
     category: 'Encoding',
     version: '1.0.0',
     status: 'Stable',
-    githubUrl: 'https://github.com/hatrix/base64-encoder',
+    githubUrl: '#',
     docsUrl: '#',
   },
   {
@@ -102,7 +102,7 @@ export const tools: SecurityTool[] = [
     category: 'Encoding',
     version: '1.0.0',
     status: 'Stable',
-    githubUrl: 'https://github.com/hatrix/base64-decoder',
+    githubUrl: '#',
     docsUrl: '#',
   },
   {
@@ -111,7 +111,7 @@ export const tools: SecurityTool[] = [
     category: 'Web',
     version: '1.0.0',
     status: 'Stable',
-    githubUrl: 'https://github.com/hatrix/url-encoder',
+    githubUrl: '#',
     docsUrl: '#',
   },
   {
@@ -120,7 +120,7 @@ export const tools: SecurityTool[] = [
     category: 'Web',
     version: '1.0.0',
     status: 'Stable',
-    githubUrl: 'https://github.com/hatrix/url-decoder',
+    githubUrl: '#',
     docsUrl: '#',
   },
   {
@@ -129,7 +129,7 @@ export const tools: SecurityTool[] = [
     category: 'Crypto',
     version: '0.6.0',
     status: 'Beta',
-    githubUrl: 'https://github.com/hatrix/aes-encryptor',
+    githubUrl: '#',
     docsUrl: '#',
   },
   {
@@ -138,7 +138,7 @@ export const tools: SecurityTool[] = [
     category: 'Crypto',
     version: '0.6.0',
     status: 'Beta',
-    githubUrl: 'https://github.com/hatrix/aes-decryptor',
+    githubUrl: '#',
     docsUrl: '#',
   },
   {
@@ -147,7 +147,7 @@ export const tools: SecurityTool[] = [
     category: 'Crypto',
     version: '1.0.0',
     status: 'Stable',
-    githubUrl: 'https://github.com/hatrix/sha256-generator',
+    githubUrl: '#',
     docsUrl: '#',
   },
   {
@@ -156,7 +156,7 @@ export const tools: SecurityTool[] = [
     category: 'Crypto',
     version: '1.0.0',
     status: 'Stable',
-    githubUrl: 'https://github.com/hatrix/md5-generator',
+    githubUrl: '#',
     docsUrl: '#',
   },
 ];

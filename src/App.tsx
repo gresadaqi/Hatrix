@@ -103,9 +103,9 @@ function App() {
         </Section>
         <Section id="contact" eyebrow="Contact" title="Connect with Hatrix" description="Follow development, request documentation, or reach out for collaboration.">
           <div className="flex flex-wrap gap-3">
-            <a href="https://github.com/hatrix" className="inline-flex items-center gap-2 rounded-md border border-white/10 bg-panel px-5 py-3 font-semibold text-white transition hover:border-accent/60 hover:bg-white/5"><FiGithub /> GitHub</a>
-            <a href="mailto:contact@hatrix.dev" className="inline-flex items-center gap-2 rounded-md border border-white/10 bg-panel px-5 py-3 font-semibold text-white transition hover:border-accent/60 hover:bg-white/5"><FiMail /> Email</a>
-            <a href="https://www.linkedin.com/company/hatrix" className="inline-flex items-center gap-2 rounded-md border border-white/10 bg-panel px-5 py-3 font-semibold text-white transition hover:border-accent/60 hover:bg-white/5"><FiLinkedin /> LinkedIn</a>
+            <a href="#" className="inline-flex items-center gap-2 rounded-md border border-white/10 bg-panel px-5 py-3 font-semibold text-white transition hover:border-accent/60 hover:bg-white/5"><FiGithub /> GitHub</a>
+            <a href="#" className="inline-flex items-center gap-2 rounded-md border border-white/10 bg-panel px-5 py-3 font-semibold text-white transition hover:border-accent/60 hover:bg-white/5"><FiMail /> Email</a>
+            <a href="#" className="inline-flex items-center gap-2 rounded-md border border-white/10 bg-panel px-5 py-3 font-semibold text-white transition hover:border-accent/60 hover:bg-white/5"><FiLinkedin /> LinkedIn</a>
           </div>
         </Section>
       </main>
