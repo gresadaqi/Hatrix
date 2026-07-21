@@ -1,4 +1,4 @@
-export type ToolCategory = 'Web' | 'Network' | 'OSINT' | 'Crypto' | 'Encoding' | 'Utilities';
+export type ToolCategory = 'Web' | 'Network' | 'OSINT' | 'Crypto' | 'Encoding' | 'Utilities' | 'Web Security';
 
 export type ToolStatus = 'Stable' | 'Beta' | 'Planned';
 
@@ -10,12 +10,22 @@ export type SecurityTool = {
   status: ToolStatus;
   githubUrl: string;
   docsUrl: string;
-  action?: 'ioc-transform';
+  action?: 'ioc-transform' | 'security-headers';
 };
 
-export const categories: ToolCategory[] = ['Web', 'Network', 'OSINT', 'Crypto', 'Encoding', 'Utilities'];
+export const categories: ToolCategory[] = ['Web', 'Network', 'OSINT', 'Crypto', 'Encoding', 'Utilities', 'Web Security'];
 
 export const tools: SecurityTool[] = [
+  {
+    name: 'Security Header Analyzer',
+    description: 'Analyze a website’s HTTP security headers and receive a score, findings, and remediation guidance.',
+    category: 'Web Security',
+    version: '1.0.0',
+    status: 'Stable',
+    githubUrl: '#',
+    docsUrl: '#',
+    action: 'security-headers',
+  },
   {
     name: 'IOC Defanger / Refanger',
     description: 'Defang or restore URLs, domains, IP addresses, and email indicators entirely in your browser.',
