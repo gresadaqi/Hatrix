@@ -1,7 +1,8 @@
 import { useMemo, useState } from 'react';
-import { motion } from 'framer-motion';
-import { FiBookOpen, FiChevronRight, FiGithub, FiSearch, FiShield } from 'react-icons/fi';
+import { AnimatePresence, motion } from 'framer-motion';
+import { FiBookOpen, FiChevronRight, FiGithub, FiSearch, FiShield, FiTool } from 'react-icons/fi';
 import { categories, tools, type ToolCategory } from '../data/tools';
+import { IocDefanger } from './tools/IocDefanger';
 
 const allCategories = ['All', ...categories] as const;
 
@@ -12,6 +13,7 @@ type ToolsGridProps = {
 export function ToolsGrid({ onAction }: ToolsGridProps) {
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState<(typeof allCategories)[number]>('All');
+  const [iocToolOpen, setIocToolOpen] = useState(false);
 
   const filteredTools = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
@@ -26,6 +28,7 @@ export function ToolsGrid({ onAction }: ToolsGridProps) {
 
   return (
     <div>
+      <AnimatePresence>{iocToolOpen && <IocDefanger onClose={() => setIocToolOpen(false)} />}</AnimatePresence>
       <div className="mb-8 grid gap-4 lg:grid-cols-[1fr_auto]">
         <label className="relative block">
           <span className="sr-only">Search tools</span>
@@ -83,7 +86,9 @@ export function ToolsGrid({ onAction }: ToolsGridProps) {
               <span className="h-1 w-1 rounded-full bg-zinc-600" />
               <span>Privacy aware</span>
             </div>
-            <div className="flex gap-3">
+            {tool.action === 'ioc-transform' ? (
+              <button type="button" onClick={() => setIocToolOpen(true)} className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-accent px-4 py-2.5 text-sm font-bold text-white shadow-glow transition hover:bg-red-600 active:scale-[0.98]"><FiTool /> Open Tool</button>
+            ) : <div className="flex gap-3">
               <button
                 type="button"
                 onClick={() => onAction(`${tool.name} repository link will be added when it is published.`)}
@@ -98,7 +103,7 @@ export function ToolsGrid({ onAction }: ToolsGridProps) {
               >
                 <FiBookOpen /> Docs
               </button>
-            </div>
+            </div>}
           </motion.article>
         ))}
       </motion.div>

@@ -10,11 +10,22 @@ export type SecurityTool = {
   status: ToolStatus;
   githubUrl: string;
   docsUrl: string;
+  action?: 'ioc-transform';
 };
 
 export const categories: ToolCategory[] = ['Web', 'Network', 'OSINT', 'Crypto', 'Encoding', 'Utilities'];
 
 export const tools: SecurityTool[] = [
+  {
+    name: 'IOC Defanger / Refanger',
+    description: 'Defang or restore URLs, domains, IP addresses, and email indicators entirely in your browser.',
+    category: 'Utilities',
+    version: '1.0.0',
+    status: 'Stable',
+    githubUrl: '#',
+    docsUrl: '#',
+    action: 'ioc-transform',
+  },
   {
     name: 'Password Generator',
     description: 'Generate strong passwords with configurable length, symbols, and entropy targets.',
