@@ -27,7 +27,7 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
-      - name: Build
+      - name: Build with Security Header API URL
         run: npm run build
         env:
           VITE_SECURITY_HEADER_API_URL: ${{ vars.SECURITY_HEADER_API_URL }}
